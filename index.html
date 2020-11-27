@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	<title>WWW | Responsive</title>	
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <!-- Windows Prompt -->
+	<script type="text/javascript">
+		var y = window.prompt("Masukkan Nama Anda: ");
+		if (y){
+			if(y !== ''){
+			// Windows Confirm
+			var x = window.confirm("Apakah Nama anda Sudah Benar");
+			if(x){
+				window.alert("Selamat datang " + y + " , Semoga Selalu Bahagia");
+			} 
+			// Akhir Windows Confirm
+			}
+		}
+	</script>
+	<!-- Akhir Windows Prompt -->
+</head>
+<body>
+
+<div class="container">
+	<div class="logo">
+		<img src="logo.png" width="100">
+		<p><b>WEBSITE RESPONSIVE</b></p>
+	</div>
+
+	<div class="main">
+		<div class="left">
+			<h3>LEFT</h3>
+			<p>Website Responsive</p>
+			<div class="header">
+				<div class="frame-slider">
+					<img  class="mySlides fade" src="gambar2.png" alt="" width="200">
+					<img  class="mySlides fade" src="gambar1.png" alt="" width="200">
+				</div>
+			</div>
+		</div>
+
+	<div class="middle">
+		<h3>MIDDLE</h3>
+		<p><strong>Apa itu Website?</a></strong>
+		Website adalah kumpulan informasi/kumpulan page yang biasa diakses lewat jalur internet. Setiap orang di berbagai tempat dan segala waktu bisa menggunakannya selama terhubung secara online di jaringan internet. Secara teknis, website adalah kumpulan dari page, yang tergabung kedalam suatu domain atau subdomain tertentu. Website-website yang ada berada di dalam World Wide Web(WWW) Internet.</p>
+		<p><img src="gambar1.png" alt="" width="300"></p>
+		<p><b>Pengertian Website Menurut Para Ahli</b><br>
+		- Website adalah fasilitas internet penghubung dokumen dalam lingkup lokal maupun jarak jauh. Dokumen pada website disebut dengan web page sementara link dalam website memungkinkan pengguna bisa berpindah dari satu page ke page lain (hyper text), baik diantara page yang disimpan dalam server yang sama maupun server diseluruh dunia. Pages diakses dan dibaca lewat browser seperti Netscape Navigator, Internet Explorer, Mozila Firefox, Google Chrome dan aplikasi browser lainnya (pengertian website dari Hakim Lukmanul, 2004)<br>
+		- Website adalah kumpulan halaman web yang saling terhubung dan file-filenya saling terkait satu sama lain. Web terdiri dari page/halaman, dan kumpulan halaman yang disebut homepage. Homepage berada pada posisi teratas, dengan halaman-halaman terkait yang berada di bawahnya. Biasanya setiap halaman di bawah homepage disebut child page, yang berisi hyperlink ke halaman lain dalam web (pengertian website dari Gregorius, 2000)<br>
+		- Website adalah suatu metode untuk menampilkan informasi pada internet, baik berupa teks, gambar, suara atau video yang interaktif dan mempunyai kelebihan untuk menghubungkan (link) satu dokumen dengan dokumen lainnya (hypertext), dapat diakses melalui sebuah browser (pengertian website dari Yuhefizar, 1998)</p>
+	</div>
+
+	<div class="right">
+		<h3>RIGHT</h3>
+		<p><h2><b>Situs web</b></h2><br>
+		Situs web adalah sekumpulan halaman web yang saling berhubungan yang umumnya berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau organisasi.</p>
+		<h3>Artikel responsive Lain</h3>
+		<p>
+			<ul>
+				<li><a href="#">Pengenalan Responsif Web Design</a></li>
+				<li><a href="#">Pengenalan Responsif Web Design lorem ipsum dolear sumit class main right</a></li>
+				<li><a href="#">Pengenalan Responsif Web Design lorem ipsum dolear sumit class main right</a></li>
+				<li><a href="#">Pengenalan Responsif Web Design lorem ipsum dolear sumit class main right</a></li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+	<div class="footer">
+		<h4>Footer</h4>
+		<!-- Manipulasi Text -->
+				<script>
+					var	message = "Ivan Rahmadani Ariyanto"
+					var format = message.toUpperCase()
+					var size = 1
+					for (i=0; i<message.length; i++) {
+					document.write(format.charAt(i).fontsize(size).bold())
+					if (size<6) {
+							size++
+						} else {
+							size = 1
+						}
+					}
+				</script>
+				<!-- Akhir Manipulasi Text -->
+	</div>
+
+</div>
+<script type="text/javascript">
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		for (i = 0; i < slides.length; i++) {
+		 slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex=1}
+			slides[slideIndex-1].style.display = "block";
+		setTimeout(showSlides, 2000);
+	}
+</script>
+</body>
+</html>
